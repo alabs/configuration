@@ -12,6 +12,6 @@
       environment:
         DB_MIGRATION_USER: "{{ COMMON_MYSQL_MIGRATE_USER }}"
         DB_MIGRATION_PASS: "{{ COMMON_MYSQL_MIGRATE_PASS }}"
-      with_items:
-        - lms
-        - cms
+      with_nested:
+        - ['lms', 'cms']
+        - "{{ DATABASES }}"
