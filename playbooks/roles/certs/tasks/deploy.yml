@@ -101,10 +101,10 @@
 - include: tag_ec2.yml tags=deploy
   when: COMMON_TAG_EC2_INSTANCE
 
-- name: restart certs
-  supervisorctl: >
-    name=certs
-    supervisorctl_path={{ supervisor_ctl }}
-    config={{ supervisor_cfg }}
-    state=restarted
-  when: not disable_edx_services
+#e name: restart certs
+#  supervisorctl: >
+#    name=certs
+#    supervisorctl_path={{ supervisor_ctl }}
+#    config={{ supervisor_cfg }}
+#    state=restarted
+#  when: not disable_edx_services
