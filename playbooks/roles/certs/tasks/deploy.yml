@@ -80,14 +80,14 @@
   changed_when: supervisor_update.stdout is defined and supervisor_update.stdout != ""
   when: not disable_edx_services
 
-- name: ensure certs has started
-  supervisorctl: >
-    name=certs
-    supervisorctl_path={{ supervisor_ctl }}
-    config={{ supervisor_cfg }}
-    state=started
-  sudo_user: "{{ supervisor_service_user }}"
-  when: not disable_edx_services
+#- name: ensure certs has started
+#  supervisorctl: >
+#    name=certs
+#    supervisorctl_path={{ supervisor_ctl }}
+#    config={{ supervisor_cfg }}
+#    state=started
+#  sudo_user: "{{ supervisor_service_user }}"
+#  when: not disable_edx_services
 
 - name: create a symlink for venv python
   file: >
