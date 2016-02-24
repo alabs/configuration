@@ -203,9 +203,9 @@ EDXAPP_BOOK_URL: ""
 # This needs to be set to localhost
 # if xqueue is run on the same server
 # as the lms (it's sent in the request)
-EDXAPP_SITE_NAME: 'localhost'
+EDXAPP_SITE_NAME: 'edx.alabs.org'
 EDXAPP_LMS_SITE_NAME: "{{ EDXAPP_SITE_NAME }}"
-EDXAPP_CMS_SITE_NAME: 'localhost'
+EDXAPP_CMS_SITE_NAME: 'studio.edx.alabs.org'
 EDXAPP_MEDIA_URL:  "/media"
 EDXAPP_ANALYTICS_SERVER_URL:  ""
 EDXAPP_FEEDBACK_SUBMISSION_EMAIL: ""
